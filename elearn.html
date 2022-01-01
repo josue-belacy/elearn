@@ -21,39 +21,70 @@
 <body data-spy="scroll" data-target=".navbar">
 
     <header class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">  
                 <img src="img/logo2.jpeg" class="img-fluid logo rounded" height="40" width="120" alt="ELearn Logo">
                 </div>
                 <div class="col">
                 <h1>E-Learn</h1>
-                <h3>Learn Collaboratively</h3>
+                <h4>Learn Collaboratively</h4>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                <a role="button"  class="btn btn-lg btn-info"  data-toggle="modal" data-target="#reserveModal">Student Sign up</a>
+                <a role="button"  class="btn btn-lg btn-primary"  data-toggle="modal" data-target="#reserveModal">Office Hours</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand logo rounded" href="elearn.html"><img src="img/logo2.jpeg" height="30" width="30" alt="ELearn Logo" />
-            </a>           
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nucampNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="elearn.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="coursecontent.html"><i class="fa fa-info fa-lg"></i> Course Content</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> My Grades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="interact.html"><i class="fa fa-address-card fa-lg"></i> Mailbox</a></li>
-                </ul>
+    <!-- Vertical Navbar -->
+    <div class="vertical-nav bg-white" id="sidebar">
+        <div class="py-4 px-3 mb-4 bg-light">
+          <div class="media d-flex align-items-center"><img src="img/student.jpeg" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+            <div class="media-body">
+              <h4 class="m-0">Jane Doe</h4>
+              <p class="font-weight-light text-muted mb-0">Javascript 101</p>
             </div>
+          </div>
         </div>
-    </nav>
+
+        <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+
+        <ul class="nav flex-column bg-white mb-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
+                      <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                      Home
+                  </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark font-italic">
+                      <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                      Course Content
+                  </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark font-italic">
+                      <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+                      Grades
+                  </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark font-italic">
+                      <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+                      Mailbox
+                  </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark font-italic">
+                      <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+                      Textbook
+                  </a>
+          </li>
+        </ul>
+
+        <!-- Vertical Navbar Credit Bootstrapious -->
+
 
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
@@ -103,22 +134,20 @@
                     <div class="container-fluid">
                         <form id="reserveForm">
                             <div class="form-group row">
-                                <label for="Number of Students" class="col-sm-6 col-form-label">Study Group Signup
+                                <label for="Number of Students" class="col-sm-6 col-form-label">Meeting Duration
                                 </label>
                                     <div class="col">
                                         <select name="Number of Students" id="studentnumber" class="form-control">
                                         <option selected>Select...</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
+                                        <option value="1">15 Minutes</option>
+                                        <option value="2">30 Minutes</option>
+                                        <option value="3">45 Minutes</option>
+                                        <option value="4">60 Minutes</option>
                                         </select>
                                     </div>
                             </div>
                             <div class="form-group row">
-                                <label for="date" class="col-sm-6 col-form-label ">Date</label>
+                                <label for="date" class="col-sm-6 col-form-label ">Dates</label>
                                     <div class="col-sm-6">
                                         <input type="date" class="form-control" id="date" name="date" placeholder="mm/dd/yyyy">
                                     </div>
@@ -176,61 +205,10 @@
                             <span class="carousel-control-next-icon"></span>
                             <span class="sr-only">Next</span>
                         </a>
-                    </div>                </div>
-            </div>
-        </div>
-
-
-
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <div id="tv">
-                <h3 class="text-sm-right"></h3>
-                </div>
-            </div>
-        
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail " src="img/class standing.jpeg" alt="" />
-                    <div class="media-body align-self-center">
-                        <h3>Lorem </h3>
-                        <p class="d-none d-sm-block">ipsum dolor, sit amet consectetur , consequuntur consequatur.</p>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
-
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h3>Featured Campsites</h3>
-            </div>
-            <div class="col">
-                <div class="media">
-                        <img class="d-flex ml-3 img-thumbnail order-sm-last " src="" alt="Calendar Events" />
-                    <div class="media-body align-self-center">
-                        <h3>Calendar Events</h3>
-                        <p class="d-none d-sm-block">Join live lectures, submit quizzes on Monday, all exams will be on due on Friday</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h3 class="text-sm-right">Our Community Partners</h3>
-            </div>
-
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
-                    <div class="media-body align-self-center">
-                        <h3>Bootstrap Outfitters</h3>
-                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
         <div class="row row-content ">
             <div class="col-sm-6 mx-auto">
