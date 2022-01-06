@@ -37,7 +37,8 @@
         </div>
     </header>
 
-    <!-- Vertical Navbar -->
+        <!-- Vertical Navbar -->
+    <div class="row ml-4">
     <div class="vertical-nav bg-white" id="sidebar">
         <div class="py-4 px-3 mb-4 bg-light">
           <div class="media d-flex align-items-center"><img src="img/student.jpeg" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
@@ -47,12 +48,13 @@
             </div>
           </div>
         </div>
+    </nav>
 
         <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
 
         <ul class="nav flex-column bg-white mb-0">
           <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic bg-light">
+            <a href="#" class="nav-link text-dark font-italic">
                       <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
                       Home
                   </a>
@@ -61,6 +63,7 @@
             <a href="#" class="nav-link text-dark font-italic">
                       <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
                       Course Content
+                      <span class="badge badge-primary px-2 rounded-pill ml-2">5</span>
                   </a>
           </li>
           <li class="nav-item">
@@ -73,6 +76,7 @@
             <a href="#" class="nav-link text-dark font-italic">
                       <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
                       Mailbox
+                      <span class="badge badge-primary px-2 rounded-pill ml-2">22</span>
                   </a>
           </li>
           <li class="nav-item">
@@ -82,47 +86,10 @@
                   </a>
           </li>
         </ul>
-
-        <!-- Vertical Navbar Credit Bootstrapious -->
-
-
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Login</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginEmail">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> Remember me</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
+        <!-- Vertical Navbar End -->
+        
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -258,7 +225,7 @@
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="elearn.html">Home</a></li>
+                        <li><a href=index.html">Home</a></li>
                         <li><a href="coursecontent.html">Course Content</a></li>
                         <li><a href="#">My Grades</a></li>
                         <li><a href="interact.html">Mailbox</a></li>
