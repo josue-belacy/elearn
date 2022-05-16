@@ -1,3 +1,18 @@
-*{
+:root {
+  --gradient:linear-gradient(90deg, #f1c40f, #f39c12);
+}
+
+* {
   font-family: 'Roboto Flex', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  border: none; outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+*::selection {
+  background: #f39c12;
+  color: #fff;
 }
