@@ -39,6 +39,10 @@ html::-webkit-scrollbar-thumb {
   font-size: 2rem;
   color: #fff;
   background: var(--gradient);
+  border-radius: 5;
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: 0 .1rem .3rem rgba(0,0,0,0.3);
   
 }
 
