@@ -32,5 +32,45 @@
 --fs-4: 20px;
 --fs-5: 18px;
 
+--fw-500: 500;
+--fw-700: 700;
+
+/* Transition */
+
+--transition: 0.2s ease-in-out;
+
+/* Spacing */
+
+--section-padding: 80px;
+
 
 }
+
+/* RESET */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+a,
+img,
+span,
+button,
+ion-icon { display: block; }
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+html { scroll-behavior: smooth; }
+
+body { background: var(--white); }
