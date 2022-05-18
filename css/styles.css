@@ -39,7 +39,7 @@ html::-webkit-scrollbar-thumb {
   font-size: 2rem;
   color: #fff;
   background: var(--gradient);
-  border-radius: 5;
+  border-radius: 5rem;
   margin-top: 1rem;
   cursor: pointer;
   box-shadow: 0 .1rem .3rem rgba(0,0,0,0.3);
@@ -106,12 +106,16 @@ header #menu {
   height: 100%;
   width: 100%;
   position: fixed;
-  top: 0; left: 0;
+  top: -120%; left: 0;
   z-index: 1000;
   background: rgba(0,0,0,.5);
   display: flex;
   align-items: center;
   justify-self: center;
+}
+
+.login-form.popup{
+  top:0;
 }
 
 .login-form form {
@@ -161,11 +165,26 @@ header #menu {
   color: #f39c12;
 }
 
+.login-form form .btn {
+  width: 100%;
+  margin: 2rem 0;
+}
 
+.login-form form .btn:hover {
+  background: #444;
+}
 
+.login-form form .fa-times {
+  position: absolute;
+  top: 1.5rem; right: 2rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #999;
+}
 
-
-
+.login-form form .fa-times:hover {
+  color: #444;
+}
 
 
 /* media queries */
@@ -217,3 +236,9 @@ header .navbar.nav-toggle {
 }
 
 }
+
+@media (max-width:500px) {
+
+  html {
+    font-size: 50%;
+  };
